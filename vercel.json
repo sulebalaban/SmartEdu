@@ -1,12 +1,12 @@
 {
     "version": 2,
     "builds": [
-      { "src": "smartedu/wsgi.py", "use": "@vercel/python" }
+      { "src": "manage.py", "use": "@vercel/python" }
     ],
     "routes": [
       { "src": "/static/(.*)", "dest": "/staticfiles/$1" },
       { "src": "/media/(.*)", "dest": "/media/$1" },
-      { "src": "/(.*)", "dest": "smartedu/wsgi.py" }
+      { "src": "/(.*)", "dest": "manage.py" }
     ]
   }
   
